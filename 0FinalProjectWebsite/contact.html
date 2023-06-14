@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact form</title>
+
+    <link rel="stylesheet" href="./style1.css" />
+    <link rel="stylesheet" href="./style2.css" />
+    <link rel="stylesheet" href="./form.css" />
+  </head>
+  <!--Name:Saphalta Kumal
+    Semester:Fall 2022
+    email:skumal@twu.edu
+    date-10/7/2022-->
+  <body>
+    <button type="button" onclick="myFunction()">CoralSheet</button>
+    <button type="button" onclick="myfunction()">OliveSheet</button>
+    <button type="button" onclick="mFunction()">LightgreySheet</button>
+
+    <nav id="navbar">
+      <ul id="nav_items">
+        <li>
+          <a href="./index.html" class="nav_link">Home</a>
+        </li>
+        <li>
+          <a href="./Hobby.html" class="nav_link">Hobbies</a>
+        </li>
+        <li>
+          <a href="./resume.html" class="nav_link">Resume</a>
+        </li>
+        <li>
+          <a href="./blog.html" class="nav_link">Blog</a>
+        </li>
+        <li>
+          <a href="./About.html" class="nav_link">About</a>
+        </li>
+        <li>
+          <a href="./contact.html" class="nav_link">Contact Form</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- Start HTML-->
+      <div class="form-container">
+        <h1>Contact Form</h1>
+        <form
+          name="contactForm"
+          method="post"
+          onsubmit="return validate()"
+          action="#"
+        >
+          <label for="name">* Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" />
+          <span class="errors"></span><br />
+
+          <label for="email">* Email</label>
+          <input
+            type="text"
+            placeholder="Email address"
+            id="email"
+            name="email"
+          />
+          <span class="errors"></span><br />
+
+          <label for="phone">* Phone</label>
+          <input
+            type="text"
+            placeholder="Phone number"
+            id="phone"
+            name="phone"
+          />
+          <span class="errors"></span><br />
+
+          <label for="subject">* Message</label>
+          <textarea
+            placeholder="Your message"
+            cols="132"
+            rows="5"
+            name="subject"
+            id="subject"
+          ></textarea>
+          <span class="errors"></span><br />
+
+          <div class="btn">
+            <input type="submit" />
+          </div>
+        </form>
+      </div>
+      <!-- END  HTML -->
+    </main>
+    <!-- Contact Information -->
+    <section class="container">
+      <div class="content-section">
+        <div class="title">
+          <h2>Contact Information</h2>
+        </div>
+        <div class="content">
+          <p class="content_text">
+            <span>Phone Number:</span>
+            507-304-5234
+          </p>
+          <p class="content_text">
+            <span>Address:</span>
+            <a
+              href="https://vymaps.com/NP/Maya-Beach-Nepal-978384792195285/"
+              target="_blank"
+            >
+              Irving, Texas, 75060
+            </a>
+          </p>
+          <p class="content_text">
+            <span>Email:</span>
+            Sbrai91@gmail.com
+          </p>
+          <p class="content_text">
+            <span>Linkedin:</span>
+            <a
+              href="https://www.linkedin.com/in/saphalta-kumal-5496321a2/"
+              target="_blank"
+            >
+              My Linkedin profile
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="image-section">
+        <figure>
+          <img
+            src="images/contactus.jpg"
+            alt="hand holding a phone with different logs as a background "
+          />
+        </figure>
+      </div>
+      <div class="clear"></div>
+    </section>
+    <!-- Google Map Location -->
+    <div class="container">
+      <h2>Location</h2>
+      <figure>
+        <img
+          class="accom-image"
+          src="./images/googlepin.jpg"
+          alt="Location Pin and buildings"
+        />
+      </figure>
+      <p class="content_text">
+        I am currently living at Irving, Texas. It falls under Dallas County. It
+        is a home to people of different races such as Hispanic, White, Black,
+        Asian etc. I would say it is a very diverse place where everybody
+        respects everybody’s culture. It has very beautiful parks where you can
+        take your kids, hangout with your friends or for a nice evening walk.
+        One of my favorites is Victoria Park. There are a lot of Indian, Nepali,
+        Chinese, Korean, and Japanese restaurants. It is a very convenient
+        location for universities, and airports. It is also a home to 8,500
+        companies. It is one of the main reason people are moving to Irving.
+        Overall, it is a very nice place for a livelihood.
+      </p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107242.71799920994!2d-97.0314730207517!3d32.862856487916005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e825c1d09f58f%3A0x3c306f568687f309!2sIrving%2C%20TX!5e0!3m2!1sen!2sus!4v1670479950336!5m2!1sen!2sus"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <!-- Lets Keep Connected -->
+    <div class="container">
+      <h1>Let's Keep In Touch</h1>
+      <figure>
+        <img
+          class="accom-image"
+          src="images/keepintouch.jpg"
+          alt="Paper pinned in wall"
+        />
+      </figure>
+      <p class="content_text">
+        I am open to work because I am eager to take on new challenges and learn
+        new skills. I am a hardworking and dedicated individual who is willing
+        to put in the effort to succeed. I believe that every job is an
+        opportunity to grow and improve, and I am excited to take on that
+        challenge. In addition to my enthusiasm and willingness to learn, I am
+        also highly adaptable. I am able to quickly adjust to new environments
+        and learn new processes and systems. This allows me to hit the ground
+        running and make a positive contribution to any team I join. I am also a
+        team player who is able to work well with others. I understand the
+        importance of collaboration and communication in achieving successful
+        outcomes, and I am committed to contributing to a positive and
+        productive work environment. Overall, I am open to work because I am
+        excited about the possibilities that it brings and the opportunity to
+        grow both personally and professionally. I am ready to take on new
+        challenges and make a meaningful contribution to any team I join. Thank
+        You!
+      </p>
+    </div>
+    <!-- Script JS -->
+
+    <script src="sheet.js"></script>
+
+    <script src="validation.js"></script>
+  </body>
+</html>
